@@ -1,0 +1,71 @@
+.form {
+  background-color: var(--eerie-black-2);
+  border: 1px solid var(--raisin-black);
+  border-radius: var(--radius-24);
+  padding: 50px 25px;
+  box-shadow: var(--shadow-2);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.form-controller {
+  display: flex;
+  background-color: var(--gunmetal_50);
+  border: 1px solid var(--raisin-black);
+  border-radius: var(--radius-24);
+  overflow: hidden;
+}
+.input-box {
+  flex: 3;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: inherit;
+  border-radius: 5px 0 0 5px;
+  font-size: var(--fs-3);
+  color: white;
+}
+select {
+  flex: 1;
+  background-color: var(--raisin-black);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 8px;
+  color: var(--white);
+  font-size: var(--fs-3);
+}
+select > option {
+  font-size: var(--fs-3);
+}
+
+.input-box:focus,
+select:focus {
+  outline: none;
+}
+.herobtn {
+  max-width: 100% !important;
+  width: 100%;
+}
+.waitTranstion {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  top: 33%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  padding: 10px;
+  box-shadow: 1px 1px 5px 5px rgba(30, 30, 30, 0.3);
+  background-color: var(--white);
+  color: var(--oxford-blue-2);
+  border-radius: 20px;
+  font-size: 16px;
+}
+.waitTranstion.active {
+  display: none;
+}
